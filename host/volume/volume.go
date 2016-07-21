@@ -31,7 +31,8 @@ type Volume interface {
 	It is a serializable structure intended for API use.
 */
 type Info struct {
-	ID     string `json:"id"`
-	Size   int64  `json:"size,omitempty"`
-	FSType string `json:"fs_type,omitempty"`
+	ID        string `json:"id"`
+	Size      int64  `json:"size,omitempty"`
+	FSType    string `json:"fs_type,omitempty"`
+	Writeable bool   `json:"writeable,omitempty"`
 }
